@@ -1,0 +1,207 @@
+/*font-family: 'Ubuntu', sans-serif;*/
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background: linear-gradient(to right,#1488CC, #2b32b2) fixed;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    background: #FFF;
+    height: 80px;
+    line-height: 70px;
+    position: relative;
+  
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    left: auto;
+    bottom: auto;
+    width: 0px;
+    height: 0px;
+    border-bottom: 30px solid transparent;
+    border-right: 1400px solid white;
+}
+
+.menu{
+    float:right;
+}
+
+.menu a{
+    font-size: 1.2em;
+    text-decoration:none;
+    margin-right: 20px;
+    background: white;
+    padding: 7px;
+    color:#175bc4;
+    z-index: 2;
+}
+
+.menu a:hover{
+    border-radius : 50px;
+    position: relative;
+}
+
+.menu a:hover::before{
+    content: "";
+    position: absolute;
+    left: -3px;
+    right: -3px;
+    top: -3px;
+    bottom: -3px;
+    background: linear-gradient(to top left, #1488CC, #2b32b2);
+    border-radius : 50px;
+    z-index: -1;
+}
+
+.logo img{
+    width: 170px;
+    margin-top: 2px;
+    margin-right: 48px;
+    float:left;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding-top: 15px;
+    
+}
+.hamburger > div{
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.hamburger.clicked{
+    background: white;
+}
+.hamburger.clicked > div{
+    background: linear-gradient(to top left, #1488CC, #2b32b2);
+}
+
+/* end header */
+
+
+/* experiences */
+
+.pic-experiences img{
+    border-radius: 40px;
+    width: 60%;
+    margin-top: 60px;
+    margin-left: 20%;
+    padding-bottom: 20px;
+  
+}
+
+.experiences {
+    border: 3px white;
+}
+
+.experiences h2 {
+    text-align: center;
+   
+}
+
+
+
+article h3 {
+    color: #03045e;
+}
+
+.separator{
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+.experiences article {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 2%;
+ 
+}
+
+/* end experiences */
+
+
+/*footer*/
+.copyright a:hover{
+    text-decoration:none;
+}
+
+.copyright a {
+    color: white;
+}
+
+.copyright .separator{
+    height: 1px;
+    width: 50%;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+}  
+/*footer*/
+
+
+
+
+@media all and (max-width: 1000px){
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .menu a:hover::before{
+        background: none;
+    }
+
+    .logo{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        float: initial;
+    }
+    .header::before{
+        display: none;
+    }
+    .header{
+        display: none;
+        height: auto;
+    }
+    .header.clicked{
+        display: block;
+    }
+    header,
+    .container,
+    .container-fluid{
+        padding: 0;
+    }
+    .hamburger:hover .header{
+        display: initial;
+    }
+}

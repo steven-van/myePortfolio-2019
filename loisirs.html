@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> My ePortfolio</title>
+
+        <!-- font-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap" rel="stylesheet">
+
+        <!-- css-->
+        <link rel="stylesheet" href="styleCSS/bootstrap.min.css">
+        <link rel="stylesheet" href="styleCSS/loisirs.css">
+    </head>
+
+    <!-- contenu du site -->
+    <body>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <nav class="menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="experiences.html">Expériences</a>
+                    <a href="loisirs.html">Loisirs</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+        
+        <!-- loisirs -->
+        <section class="container-fluid loisirs">
+                
+            <div class="pic-loisirs">
+                <img src="images/loisirs.png" alt="image loisirs"/>
+            </div>
+                
+            <div class="loisirs">
+
+                <h2>Mes loisirs</h2>
+            
+                <hr class="separator">
+               
+
+                
+
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12"> 
+                    <h3>Taekwondo</h3>
+                    <p>Etant un fan depuis tout petit des films d'arts martiaux, je pratique le Tae Kwon Do depuis presque plus de 5 ans. Il s'agit d'un art martial Coréen similaire au Karate mais qui se distingue par une utilisation plus fréquente des pieds créant ainsi un style plus fluide, plus aérien, plus spectaculaire et moins statique. Cela m'a permis d'apprendre à me défendre et à avoir plus confiance en moi mais aussi à maintenir une bonne condition</p>
+                   
+                    <p>Je considère le Tae Kwon Do comme étant plus qu'une pratique sportive puisqu'il me permet aussi de me défouler et d’évacuer le stress, de canaliser l’agressivité de manière éducative et contrôlée, d’avoir de l’assurance dans les situations de conflits.</p>
+                   
+                    <p>Outre l'aspect sportif, la philosophie du Tae Kwon Do m'a inculqué des valeurs nobles telles que le respect, l'honnêteté et la courtoisie. </p>  
+                    </p>
+
+					<p><center><img src="images/taekwondo.png" alt="image taekwondo"/></center></p>
+
+                </article>
+
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h3>Voyages</h3>
+                    <p>L'un de mes objectifs étant de visiter le plus de pays possibles, j'éprouve beaucoup de plaisir à voyager et découvrir une tonne de nouvelles choses. Jusqu'à maintenant j'ai pu visiter plus d'une dizaine de pays mais j'ai bien l'intention d'en visiter plus !</p>
+                    
+                    <p>En ce qui concerne l'Europe, j'ai eu l'occasion de visiter des pays comme l'Angleterre, l'Espagne et l'Italie au cours de voyages scolaires. Un peu plus loin à l'Est, j'ai pu me rendre dans plusieurs Etats des Etats-Unis dont New York, la Floride, et le Texas en 2015.  Et puis en Asie, les pays ou j'ai pu posé le pied sont le Vietnam qui est mon pays d'origine, le Thaïlande, la Corée du Sud et j'en passe.</p>
+                
+                    <p>Tous ces voyages ont ouvert ma vision du monde et ont transformé ma façon de penser. Voir et découvrir d'autres cultures, modes de vie et paysages c'est assouvir sa curiosité et cela m'a permis de confronter ce que j'ai lu ou vu à une autre réalité.</p>
+                
+					<p><center><img src="images/travel.png" alt="image voyage"/></center></p>
+				
+				</article>
+
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h3>Mangas</h3>
+                    <p>Un de mes passe-temps favoris est de regarder ou lire des mangas. Ces bandes-dessinés japonaises, parfois adaptés en dessin-animés ont bercé mon enfance du fait de leur caractère fantastique qui fascine tant.  
+                    </p>
+					
+					<p><center><img src="images/manga.png" alt="image voyage"/></center></p>
+                </article>
+
+ 
+
+                
+            </div>
+
+                
+
+        </section> 
+        <!-- end loisirs -->       
+
+
+        <!-- footer-->
+        <footer class="container-fluid footer">
+            <div class="bottom section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="copyright">
+                                <hr class="separator">
+                                <p>© <span>2019</span> <a href="#">Steven VAN</a> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer-->
+        
+
+        <script>
+            var bool = false;
+            document.querySelector(".hamburger").onclick = function(){
+                if(!bool){
+                    document.querySelector(".header").className = "header clicked";
+                    document.querySelector(".hamburger").className = "hamburger clicked";
+                    bool = true;
+                }
+                else{
+                    document.querySelector(".hamburger").className = "hamburger";
+                    document.querySelector(".header").className = "header";
+                    bool = false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

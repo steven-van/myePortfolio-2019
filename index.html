@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> My ePortfolio</title>
+
+        <!-- font-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap" rel="stylesheet">
+
+        <!-- css-->
+        <link rel="stylesheet" href="styleCSS/bootstrap.min.css">
+        <link rel="stylesheet" href="styleCSS/style.css">
+    </head>
+
+    <!-- contenu du site -->
+    <body>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+                <div class="logo"></a><img src="images/logo.png" alt="logo"></div>
+                <nav class="menu">
+                    <a href="index.html" >Accueil</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="experiences.html">Expériences</a>
+                    <a href="loisirs.html">Loisirs</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+        
+       
+        <!-- bannière -->
+        <section class="container-fluid banner">
+
+        <div class="ban">
+            <img class="img-fluid" src="images/bannière.png" alt="bannière du site"/>
+        </div>
+            
+            
+        <div class="inner-banner">
+            <h1>Bienvenue sur mon ePortfolio</h1><br>
+            <p>VAN Steven<br>
+                Etudiant en filière informatique à Paris Descartes<br>
+                <button class="btn btn-custom"><a href="contact.html">Contactez moi</a></button>
+            </p>
+
+                
+         </div>
+         
+        </section>  
+        <!-- end bannière -->
+
+        <!-- footer-->
+        <footer class="container-fluid footer">
+            <div class="bottom section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="copyright">
+                                <hr class="separator">
+                                <p>© <span>2019</span> <a href="#">Steven VAN</a> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer-->
+        
+
+        <script>
+            var bool = false;
+            document.querySelector(".hamburger").onclick = function(){
+                if(!bool){
+                    document.querySelector(".header").className = "header clicked";
+                    document.querySelector(".hamburger").className = "hamburger clicked";
+                    bool = true;
+                }
+                else{
+                    document.querySelector(".hamburger").className = "hamburger";
+                    document.querySelector(".header").className = "header";
+                    bool = false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

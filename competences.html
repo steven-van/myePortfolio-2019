@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> My ePortfolio</title>
+
+        <!-- font-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap" rel="stylesheet">
+
+        <!-- css-->
+        <link rel="stylesheet" href="styleCSS/bootstrap.min.css">
+        <link rel="stylesheet" href="styleCSS/competences.css">
+    </head>
+
+    <!-- contenu du site -->
+    <body>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <nav class="menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="experiences.html">Expériences</a>
+                    <a href="loisirs.html">Loisirs</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- competences -->
+        <section class="container-fluid competences">
+            
+            <div class="pic-competences">
+                <img src="images/competences.png" alt="image competences"/>
+            </div>
+                
+            <div class="competences">
+
+                <h2>Mes compétences</h2>
+                <hr class="separator">
+
+           
+                <table>
+                    <thead> <!-- En-tête du tableau -->
+
+                        <tr> <!-- Ligne 1 -->
+
+                            <th>Logiciels</th> <!-- Colonne 1 -->
+
+                            <th>Langages informatiques</th> <!-- Colonne 2 -->
+
+                            <th>Langues</th> <!-- Colonne 3 -->
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody> <!-- Corps du tableau -->
+
+                        <tr> <!-- Ligne 2 -->
+
+                            <td>Microsoft Office Package<br><!-- Colonne 1 -->
+
+                            <td>HTML5/CSS3</td> <!-- Colonne 2 -->
+
+                            <td>Français : langue natale<br>
+							<img src="images/france_flag.png" alt="drapeau_france"/></td> <!-- Colonne 3 -->
+
+                        </tr>
+
+                        <tr> <!-- Ligne 3 -->
+
+                            <td>Shell Unix<br> <!-- Colonne 1 -->
+  
+                            <td>Java, C/C++</td> <!-- Colonne 2 -->
+
+                            <td>Vietnamien : bilingue<br>
+							<img src="images/vietnam_flag.png" alt="drapeau_vietnam"/></td> <!-- Colonne 3 -->
+
+                        </tr>
+
+                        <tr> <!-- Ligne 4 -->
+
+                            <td>Adobe Photoshop<br><!-- Colonne 1 -->
+
+                            <td>VB.NET</td> <!-- Colonne 2 -->
+
+                            <td>Anglais : niveau B2<br>
+							<img src="images/gb_flag.png" alt="drapeau_gb"/></td> <!-- Colonne 3 -->
+
+                        </tr>
+
+                        <tr> <!-- Ligne 5 -->
+
+                            <td>Microsoft Access 2016<br><!-- Colonne 1 -->
+
+                            <td>SQL/PLSQL Oracle</td> <!-- Colonne 2 -->
+
+                            <td>Espagnol : niveau B1<br>
+							<img src="images/spain_flag.png" alt="drapeau_espagne"/></td> <!-- Colonne 3 -->
+
+                        </tr>
+
+                        <tr> <!-- Ligne 6 -->
+
+                            <td>Cisco Packet Tracer</td> <!-- Colonne 1 -->
+
+                            <td>Python</td> <!-- Colonne 2 -->
+
+                            <td>Coréen : niveau débutant<br>
+							<img src="images/korea_flag.png" alt="drapeau_coree"/></td> <!-- Colonne 3 -->
+
+
+                        </tr>
+                        
+                    
+                    
+
+
+                    </tbody>
+                </table>
+                
+            
+            </div>
+        
+        </section> 
+
+        <!-- end competences -->
+
+
+        <!-- footer-->
+        <footer class="container-fluid footer">
+            <div class="bottom section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="copyright">
+                                <hr class="separator">
+                                <p>© <span>2019</span> <a href="#">Steven VAN</a> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer-->
+        
+
+        <script>
+            var bool = false;
+            document.querySelector(".hamburger").onclick = function(){
+                if(!bool){
+                    document.querySelector(".header").className = "header clicked";
+                    document.querySelector(".hamburger").className = "hamburger clicked";
+                    bool = true;
+                }
+                else{
+                    document.querySelector(".hamburger").className = "hamburger";
+                    document.querySelector(".header").className = "header";
+                    bool = false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

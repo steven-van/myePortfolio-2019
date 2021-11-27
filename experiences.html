@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> My ePortfolio</title>
+
+        <!-- font-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap" rel="stylesheet">
+
+        <!-- css-->
+        <link rel="stylesheet" href="styleCSS/bootstrap.min.css">
+        <link rel="stylesheet" href="styleCSS/experiences.css">
+    </head>
+
+    <!-- contenu du site -->
+    <body>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <nav class="menu">
+                    <a href="index.html">Accueil</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="experiences.html">Expériences</a>
+                    <a href="loisirs.html">Loisirs</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- experiences -->
+        <section class="container-fluid experiences">
+            
+            <div class="pic-experiences">
+                <img src="images/experiences.png" alt="image experiences"/>
+            </div>
+                
+            <div class="experiences">
+
+                <h2>Mes expériences</h2>
+                <hr class="separator">
+            
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h3>Diplômes</h3>
+                    <p>
+                    Diplôme National du Brevet : mention TRES BIEN 
+                    </p>
+
+                    <p>Diplôme du Baccalauréat Général : série SCIENTIFIQUE, spécialité SCIENCES DE L'INGENIEUR, mention BIEN, section Européenne : Anglais
+
+                    </p>
+                    Cambridge English Certificate : B1 2017
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h3>Stages</h3>
+                    <p>
+                        Le stage en milieu professionnel de 3ème s’est déroulé dans une pharmacie. Au cours de celui-ci j’ai travaillé en compagnie de collègues pharmaciens et j’étais chargé de la gestion des stocks et du réapprovisionnement des étagères. J’ai pu avoir un avant-gout de la vie professionnelle et des difficultés du métier (travail manuel, gérer l’affluence etc…). 
+                    </p>
+                </article>
+
+
+                <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    <h3>Expériences professionnelles</h3>
+                    <p>J’ai eu l’occasion d’effectuer un travail saisonnier pendant un mois en tant qu’agent administratif dans une petite entreprise à vocation sociale. Je me suis occupé de numériser des documents pour les recenser sur une plateforme en ligne.</p>
+                    <p>Travailler au sein de cette entreprise m’a permis de mettre en pratique mes compétences en bureautique mais également développer mes compétences sociales en travaillant au sein d’une équipe.</p>
+                   
+                </article>
+                
+            
+            </div>
+        
+        </section> 
+            
+        <!-- end experiences -->
+
+
+        <!-- footer-->
+        <footer class="container-fluid footer">
+            <div class="bottom section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="copyright">
+                                <hr class="separator">
+                                <p>© <span>2019</span> <a href="#">Steven VAN</a> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer-->
+        
+
+        <script>
+            var bool = false;
+            document.querySelector(".hamburger").onclick = function(){
+                if(!bool){
+                    document.querySelector(".header").className = "header clicked";
+                    document.querySelector(".hamburger").className = "hamburger clicked";
+                    bool = true;
+                }
+                else{
+                    document.querySelector(".hamburger").className = "hamburger";
+                    document.querySelector(".header").className = "header";
+                    bool = false;
+                }
+            }
+        </script>
+
+    </body>
+</html>
